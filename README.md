@@ -1,2 +1,30 @@
-# party-games
-INNNX. | Party Games / PASS — Flutter party game showcase. Source code is private.
+# Party Games / PASS
+
+**INNNX. · Flutter 聚会小游戏合集**
+
+一部手机轮流玩，以本地题库、玩家轮盘和倒计时组织聚会互动。本仓库用于作品展示，应用源码保持私有。
+
+## 已实现内容
+
+- 真心话大冒险、数字炸弹、谁最有可能、我从来没有、5 秒挑战、生日派对，以及独立真心话、大冒险和混合模式入口。
+- 中文、英语、西班牙语界面与题库。
+- 玩家名单、随机轮盘、本地设置、背景音乐与音效。
+- 广告同意流程和移除广告入口；这些入口不代表已正式上线或完成商店配置。
+
+## 技术栈
+
+Flutter、Dart、SharedPreferences、audioplayers、Flutter 本地化；项目包含 Google Mobile Ads 和 in_app_purchase 集成。
+
+## 当前进度
+
+本地已有 Android 调试 APK 和测试文件。游戏内容可离线使用，广告相关功能需要网络。iOS 工程存在，但本次未验证 iOS 构建。这里不发布安装包，也不宣称已在应用商店上线。
+
+## 界面预览
+
+现有本地界面截图：
+
+<img src="screenshots/home-zh.png" width="340" alt="PASS 中文游戏首页" />
+
+## 公开范围
+
+仅展示文档和界面截图。源码、签名文件、开发日志、题库和本机配置不包含在此仓库中。
