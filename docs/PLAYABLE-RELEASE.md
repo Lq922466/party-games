@@ -24,7 +24,7 @@
 - 源码保持私有；发行包的使用条款与适用第三方声明另行确认。
 
 ### 截图和演示计划
-保留现有真实截图及版本说明。补充实际运行得到的首页、核心玩法、结果或失败状态；仅在真实验证后添加英语和西语界面截图。录制约 20–40 秒连续操作演示，标明版本和平台，避免个人信息、调试覆盖层和开发路径。没有实机素材时不制作冒充游戏画面的图片。
+本仓库已展示现有中文、英语和西语 Android 完整滚动首页，分别由同一套界面捕获素材拼接而成。三份独立介绍位于 README.zh.md、README.en.md 和 README.es.md。后续补充拟发行版本实际运行得到的核心玩法、结果或失败状态，并重新核对首页与版本是否一致。录制约 20–40 秒连续操作演示，标明版本和平台，避免个人信息、调试覆盖层和开发路径。已有首页素材不替代发行包测试。
 
 ## English
 
@@ -43,7 +43,7 @@ A public showcase can host a verified playable package while the development rep
 Version and date; demo scope; platform and minimum requirements; installation and removal; interface languages; network needs; actual ad/purchase behavior; tested devices, OS, dates and results; known issues and untested platforms; asset filename, size and SHA-256; feedback through this repository's Issues without personal information; private-source status and confirmed distribution terms/third-party notices.
 
 ### Screenshot and demo plan
-Keep the existing authentic screenshot and version context. Add real captures of the home screen, core gameplay and results or failure states. Add English/Spanish interface captures only after checking those screens. Record roughly 20–40 seconds of continuous interaction with version/platform context, without personal information, debug overlays or development paths. Do not fabricate gameplay imagery.
+The repository now shows complete Chinese, English and Spanish Android scrolling home previews stitched from the same existing capture set. Dedicated introductions are in README.zh.md, README.en.md and README.es.md. Next, capture core gameplay and results or failure states from the intended release build, and check that its home matches the published preview. Record roughly 20–40 seconds of continuous interaction with version/platform context, without personal information, debug overlays or development paths. Existing home captures do not replace release-build testing.
 
 ## Español
 
@@ -62,4 +62,4 @@ Un repositorio público de presentación puede alojar un paquete jugable verific
 Versión y fecha; alcance de la demo; plataforma y requisitos mínimos; instalación y desinstalación; idiomas; conexión; comportamiento real de anuncios/compras; dispositivos, sistemas, fechas y resultados de pruebas; problemas conocidos y plataformas no verificadas; nombre, tamaño y SHA-256 del archivo; comentarios mediante Issues sin datos personales; código privado y condiciones de distribución/avisos de terceros confirmados.
 
 ### Plan de capturas y demostración
-Conservar la captura auténtica y su contexto de versión. Añadir capturas reales del inicio, la mecánica principal y los resultados o estados de derrota. Añadir pantallas en inglés/español solo después de verificarlas. Grabar unos 20–40 segundos de interacción continua indicando versión/plataforma, sin datos personales, superposiciones de depuración ni rutas de desarrollo. No fabricar imágenes de partidas.
+El repositorio ya muestra el inicio desplazable completo en chino, inglés y español, compuesto a partir del mismo conjunto existente de capturas Android. Las presentaciones independientes están en README.zh.md, README.en.md y README.es.md. Después, capturar la mecánica principal y los resultados o estados de derrota de la versión que se pretende distribuir, y comprobar que su inicio coincide con la vista publicada. Grabar unos 20–40 segundos de interacción continua indicando versión/plataforma, sin datos personales, superposiciones de depuración ni rutas de desarrollo. Las capturas existentes no sustituyen las pruebas de la versión de distribución.
