@@ -1,0 +1,43 @@
+name: Publish PASS privacy policy
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["privacy/**", ".github/workflows/privacy-pages.yml"]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate and stage public files only
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/pass-pages/privacy"
+          for file in index.html es.html zh.html legal.html aviso-legal.html legal-zh.html styles.css favicon.svg robots.txt .nojekyll; do
+            test -f "privacy/$file"
+            cp "privacy/$file" "$RUNNER_TEMP/pass-pages/privacy/$file"
+          done
+          for page in "$RUNNER_TEMP"/pass-pages/privacy/*.html; do
+            if grep -Eq '\[[A-Z][A-Z_ ]+|noindex|class="notice"' "$page"; then
+              echo "Unfinished policy: deployment blocked."
+              exit 1
+            fi
+          done
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ runner.temp }}/pass-pages
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
